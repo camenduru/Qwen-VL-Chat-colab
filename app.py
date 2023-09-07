@@ -188,9 +188,6 @@ def _launch_demo(args, model, tokenizer):
         return []
 
     with gr.Blocks() as demo:
-        gr.Markdown("""\
-<p align="center"><img src="https://modelscope.cn/api/v1/models/qwen/Qwen-VL-Chat/repo?Revision=master&FilePath=assets/logo.jpg&View=true" style="height: 80px"/><p>""")
-        gr.Markdown("""<center><font size=8>Qwen-VL-Chat Bot</center>""")
         gr.Markdown(
             """\
 <center><font size=3>This WebUI is based on Qwen-VL-Chat, developed by Alibaba Cloud. \
