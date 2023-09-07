@@ -6,7 +6,7 @@
 
 | Colab | Info
 | --- | --- |
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/camenduru/Qwen-VL-Chat-colab/blob/main/Qwen_VL_Chat_colab.ipynb) | Qwen_VL_Chat_colab
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/camenduru/Qwen-VL-Chat-colab/blob/main/Qwen_VL_Chat_colab.ipynb) | Qwen_VL_Chat_colab (4bit)
 
 ## Main Repo
 https://github.com/QwenLM/Qwen-VL <br />
