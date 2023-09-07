@@ -22,7 +22,7 @@ from modelscope import (
 )
 
 DEFAULT_CKPT_PATH = 'qwen/Qwen-VL-Chat-Int4'
-REVISION = 'v1.0.3'
+REVISION = 'v1.0.0'
 BOX_TAG_PATTERN = r"<box>([\s\S]*?)</box>"
 PUNCTUATION = "！？。＂＃＄％＆＇（）＊＋，－／：；＜＝＞＠［＼］＾＿｀｛｜｝～｟｠｢｣､、〃》「」『』【】〔〕〖〗〘〙〚〛〜〝〞〟〰〾〿–—‘’‛“”„‟…‧﹏."
 
