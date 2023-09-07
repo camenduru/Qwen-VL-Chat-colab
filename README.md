@@ -16,3 +16,4 @@ https://modelscope.cn/studios/qwen/Qwen-VL-Chat-Demo/files <br />
 https://arxiv.org/abs/2308.12966
 
 ## Output
+![Screenshot 2023-09-07 074525](https://github.com/camenduru/Qwen-VL-Chat-colab/assets/54370274/a2a09ecb-15b6-4035-914e-aaee2cf608e8)
