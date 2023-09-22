@@ -49,7 +49,7 @@ def _get_args():
 
 def _load_model_tokenizer(args):
     model_id = args.checkpoint_path
-    model_dir = snapshot_download(model_id, revision=args.revision)
+    model_dir = '/content/Qwen-VL-Chat-Int4' # snapshot_download(model_id, revision=args.revision)
     tokenizer = AutoTokenizer.from_pretrained(
         model_dir, trust_remote_code=True, resume_download=True,
     )
