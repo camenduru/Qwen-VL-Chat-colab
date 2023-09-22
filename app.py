@@ -18,10 +18,11 @@ import re
 import secrets
 import tempfile
 from modelscope import (
-    AutoModelForCausalLM, AutoTokenizer, GenerationConfig, snapshot_download
+    AutoModelForCausalLM, AutoTokenizer, GenerationConfig
 )
+from huggingface_hub import snapshot_download
 
-DEFAULT_CKPT_PATH = 'qwen/Qwen-VL-Chat-Int4'
+DEFAULT_CKPT_PATH = '4bit/Qwen-VL-Chat-Int4'
 REVISION = 'v1.0.0'
 BOX_TAG_PATTERN = r"<box>([\s\S]*?)</box>"
 PUNCTUATION = "！？。＂＃＄％＆＇（）＊＋，－／：；＜＝＞＠［＼］＾＿｀｛｜｝～｟｠｢｣､、〃》「」『』【】〔〕〖〗〘〙〚〛〜〝〞〟〰〾〿–—‘’‛“”„‟…‧﹏."
@@ -49,7 +50,7 @@ def _get_args():
 
 def _load_model_tokenizer(args):
     model_id = args.checkpoint_path
-    model_dir = '/content/Qwen-VL-Chat-Int4' # snapshot_download(model_id, revision=args.revision)
+    model_dir = snapshot_download(model_id, revision=args.revision)
     tokenizer = AutoTokenizer.from_pretrained(
         model_dir, trust_remote_code=True, resume_download=True,
     )
